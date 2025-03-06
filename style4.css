@@ -1,0 +1,111 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: black;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: orange;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a.active {
+    color: orange;
+}
+
+.contact-btn {
+    background: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background: white;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 40px;
+}
+
+.hero-content h1 span {
+    color: orange;
+}
+
+.hero-content p {
+    color: gray;
+    max-width: 400px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.hire-btn, .exp-btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.hire-btn {
+    background: black;
+    color: white;
+}
+
+.contact-btn {
+    background-color: #ff6600; /* Orange color */
+    color: white; /* Text color */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.contact-btn:hover {
+    background-color: #cc5500; /* Darker shade on hover */
+}
+
+/* Image */
+.hero-image img {
+    width: 250px;
+    border-radius: 50%;
+}

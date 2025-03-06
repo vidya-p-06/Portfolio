@@ -1,0 +1,178 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Navigation Bar */
+nav {
+    background: #222;
+    padding: 15px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background 0.3s ease-in-out;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff9800;
+    transform: scale(1.1);
+}
+
+/* About Section */
+.about-wrapper {
+    max-width: 1000px;
+    margin: 120px auto 20px;
+    padding: 20px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.profile-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-img:hover {
+    transform: scale(1.1);
+}
+
+.about-info {
+    flex: 2;
+    max-width: 600px;
+    text-align: left;
+}
+
+.about-info h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    opacity: 0;
+    animation: fadeInUp 1s ease-in-out 0.5s forwards;
+}
+
+.about-info p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    opacity: 0;
+    animation: fadeInUp 1s ease-in-out 0.8s forwards;
+}
+
+/* Skills Section */
+.skills {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.skills h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    opacity: 0;
+    animation: fadeInUp 1s ease-in-out 1s forwards;
+}
+
+.skills ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.skills ul li {
+    font-size: 18px;
+    background: #ff9800;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.skills ul li:hover {
+    transform: scale(1.05);
+}
+
+/* Education Section */
+.education {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.education h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    opacity: 0;
+    animation: fadeInUp 1s ease-in-out 1.2s forwards;
+}
+
+.education p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    opacity: 0;
+    animation: fadeInUp 1s ease-in-out 1.4s forwards;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
